@@ -8,10 +8,10 @@ namespace aheadrace.Pages
 {
    public class UsersPage
     {
-        private IWebDriver Driver;
+      
         private DriverHelper _driverHelper;
         CustomControl cc;
-       // private string text;
+       
 
         public UsersPage(DriverHelper driverHelper)
         {
@@ -30,11 +30,10 @@ namespace aheadrace.Pages
         public IWebElement btnBrowse => _driverHelper.Driver.FindElement(By.XPath("//*[text()='Browse...']"));
         public void ClickBrowseandUploadFile()
         {
-          // string filepath = "C:/User/ganji/Downloads/Participants.csv";
+          
             IWebElement UploadFile = _driverHelper.Driver.FindElement(By.XPath("//*[text()='Browse...']"));
             UploadFile.Click();
             Thread.Sleep(3000);
-            //SendKeys.SendWait(text);
             SendKeys.SendWait("C:\\Users\\ganji\\Downloads\\Participants.csv");                    
             SendKeys.SendWait("{ENTER}");
 

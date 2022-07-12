@@ -12,7 +12,7 @@ namespace aheadrace.Hooks
     [Binding]
     public class Hooks1
     {
-      //  private IWebDriver Driver;
+      
         private DriverHelper _driverHelper;
       
 

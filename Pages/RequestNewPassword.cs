@@ -7,7 +7,7 @@ namespace aheadrace.Pages
 {
     public class RequestNewPassword
     {
-        private IWebDriver Driver;
+       
         private DriverHelper _driverHelper;
 
         public RequestNewPassword(DriverHelper driverHelper)

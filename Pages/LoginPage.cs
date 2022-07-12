@@ -10,14 +10,13 @@ namespace aheadrace.Pages
     class LoginPage
     {
 
-        private IWebDriver Driver;
         private DriverHelper _driverHelper;
-        CustomControl cc;
+        CustomControl customcontrol;
 
         public LoginPage(DriverHelper driverHelper)
         {
             this._driverHelper = driverHelper;
-            cc = new CustomControl(driverHelper);
+            customcontrol = new CustomControl(driverHelper);
             
         }
 

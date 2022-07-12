@@ -19,12 +19,12 @@ namespace aheadrace.Steps
         RequestNewPassword reqnewpass;
         UsersPage userspage;
         private DriverHelper _driverHelper;
-        CustomControl cc;
+        CustomControl customcontrol;
 
         public LoginSteps(DriverHelper driverHelper)
         {
             _driverHelper = driverHelper;
-            cc = new CustomControl(driverHelper);    
+            customcontrol = new CustomControl(driverHelper);    
             loginpage = new LoginPage(driverHelper);
             reqnewpass = new RequestNewPassword(driverHelper);
             userspage = new UsersPage(driverHelper);
@@ -36,8 +36,8 @@ namespace aheadrace.Steps
         public void GivenINavigateToApplication_()
         {
             _driverHelper.Driver.Navigate().GoToUrl("https://ondemand.questionmark.com/home/406121");
-            cc.Maximize();
-            cc.WaitForPageLoad(5000);
+            customcontrol.Maximize();
+            customcontrol.WaitForPageLoad(5000);
         }
 
         [When(@"I enter username and password\.")]
