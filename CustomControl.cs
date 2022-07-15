@@ -36,7 +36,7 @@ namespace aheadrace
             }
             catch (Exception)
             {
-                //wait some time if an unexpected exception is thrown
+               
                 Thread.Sleep(500);
             }
         }
@@ -104,8 +104,6 @@ namespace aheadrace
 
 
     }
-
-
-        }
+    }
 
    

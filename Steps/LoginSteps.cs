@@ -128,8 +128,6 @@ namespace aheadrace.Steps
         [When(@"I click on ""(.*)"" option\.")]
         public void WhenIClickOnOption(string Element)
         {
-            /*IWebElement PopUpMsg = _driverHelper.Driver.FindElement(By.Id("edcc5a0e-1e2b-2743-cf81-84d784ffa49d"));
-            PopUpMsg.Click();*/
             userspage.UserPageOption(Element).Click();
         }
 
@@ -138,8 +136,5 @@ namespace aheadrace.Steps
         {
             Assert.AreEqual(userspage.status.Displayed, status);
         }
-
-
-
     }
 }

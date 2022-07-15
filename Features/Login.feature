@@ -22,5 +22,3 @@ Scenario: Create and Login in Ondemand application and  Import Participants.
 	When I click on Browse option and upload the file.
 	And I click on "Import" option.
 	Then verify with the " Created 1 user." message in the page.
-
-
