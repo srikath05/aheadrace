@@ -21,4 +21,4 @@ Scenario: Create and Login in Ondemand application and  Import Participants.
 	Then verify user is in Import Participants page by a Field on the page "Add participants to group ".
 	When I click on Browse option and upload the file.
 	And I click on "Import" option.
-	Then verify with the " Created 1 user." message in the page.
+	Then verify with the " Created 1 user." message in the page.                                

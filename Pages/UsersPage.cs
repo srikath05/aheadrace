@@ -24,7 +24,8 @@ namespace aheadrace.Pages
        public IWebElement UserPageOption(string options) =>
                     _driverHelper.Driver.FindElement(By.XPath($"//*[text()=\"{options}\"]"));
 
-        public IWebElement status => _driverHelper.Driver.FindElement(By.XPath("//h4[text() ='Status message']"));
+        //public IWebElement status => _driverHelper.Driver.FindElement(By.XPath("//h4[text() ='Status message']"));
+        public IWebElement status => _driverHelper.Driver.FindElement(By.XPath("//*[@class='alert alert-block alert-success']"));
 
 
         public IWebElement btnBrowse => _driverHelper.Driver.FindElement(By.XPath("//*[text()='Browse...']"));

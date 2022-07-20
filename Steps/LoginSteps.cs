@@ -95,7 +95,7 @@ namespace aheadrace.Steps
         [When(@"Navigate to ""(.*)"" and select ""(.*)"" option\.")]
         public void WhenNavigateToAndSelectOption_(string MenuField, string subcategory)
         {
-            _driverHelper.Driver.FindElement(By.Id("edcc5a0e-1e2b-2743-cf81-84d784ffa49d")).Click();
+           // _driverHelper.Driver.FindElement(By.Id("edcc5a0e-1e2b-2743-cf81-84d784ffa49d")).Click();
             loginpage.Menubar_People(MenuField ,subcategory);
         }
 
@@ -134,7 +134,7 @@ namespace aheadrace.Steps
         [Then(@"verify with the ""(.*)"" message in the page\.")]
         public void ThenVerifyWithTheMessageInThePage_(string status)
         {
-            Assert.AreEqual(userspage.status.Displayed, status);
+            Assert.IsTrue(userspage.status.Displayed, status);
         }
     }
 }
