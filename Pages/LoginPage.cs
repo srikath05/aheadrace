@@ -26,11 +26,9 @@ namespace aheadrace.Pages
         public IWebElement txtverifcation => _driverHelper.Driver.FindElement(By.XPath("//div[@class='alert alert-block alert-danger']"));
         public IWebElement ReqNewPass => _driverHelper.Driver.FindElement(By.XPath("//a[text()='Request new password']"));
 
-        public IWebElement MenuBar_People(string fieldname)=>        
-            _driverHelper.Driver.FindElement(By.XPath($"//a[text()=\"{fieldname }\"]"));
+        public IWebElement MenuBar_People(string fieldname)=>_driverHelper.Driver.FindElement(By.XPath($"//a[text()=\"{fieldname }\"]"));
         
-        public IWebElement People_subCategory(string Category) => 
-            _driverHelper.Driver.FindElement(By.XPath($"//a[text()=\"{Category}\"]"));
+        public IWebElement People_subCategory(string Category) =>_driverHelper.Driver.FindElement(By.XPath($"//a[text()=\"{Category}\"]"));
 
         public void EnterUsernameAndPassword(string userName, string password)
         {
@@ -39,6 +37,7 @@ namespace aheadrace.Pages
 
             txtPassword.SendKeys(password);
         }
+        
 
         public void ClickLogin()
         {

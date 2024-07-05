@@ -24,11 +24,11 @@ namespace aheadrace.Steps
         public LoginSteps(DriverHelper driverHelper)
         {
             _driverHelper = driverHelper;
-            customcontrol = new CustomControl(driverHelper);    
+            customcontrol = new CustomControl(driverHelper);
             loginpage = new LoginPage(driverHelper);
             reqnewpass = new RequestNewPassword(driverHelper);
             userspage = new UsersPage(driverHelper);
-           
+
         }
 
 
