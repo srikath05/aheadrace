@@ -35,7 +35,9 @@ namespace aheadrace.Steps
         [Given(@"I navigate to application\.")]
         public void GivenINavigateToApplication_()
         {
-            _driverHelper.Driver.Navigate().GoToUrl("https://ondemand.questionmark.com/home/406121");
+            // _driverHelper.Driver.Navigate().GoToUrl("https://ondemand.questionmark.com/home/406121");
+
+            _driverHelper.Driver.Navigate().GoToUrl("https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=155259815513&hvpone=&hvptwo=&hvadid=674842289437&hvpos=&hvnetw=g&hvrand=18127812681853341210&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062140&hvtargid=kwd-10573980&hydadcr=14453_2316415&gad_source=1");
             customcontrol.Maximize();
             customcontrol.WaitForPageLoad(5000);
         }
