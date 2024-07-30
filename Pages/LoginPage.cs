@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace aheadrace.Pages
 {
-    class LoginPage
+    public class LoginPage
     {
 
         private DriverHelper _driverHelper;

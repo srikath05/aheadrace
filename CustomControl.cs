@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.DevTools;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
@@ -101,6 +102,23 @@ namespace aheadrace
 
         }
 
+        public bool MovetoElement(IWebElement element)
+        {
+
+            bool status;
+            try
+            {
+                Actions ac = new Actions(_driverHelper.Driver);
+                ac.MoveToElement(element).Build().Perform();
+                status = true;
+            }
+            catch (Exception)
+            {
+                status = false;
+            }
+
+            return status;
+        }
 
 
     }
